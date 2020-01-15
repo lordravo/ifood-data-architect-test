@@ -22,6 +22,14 @@ bash launch_cluster.sh
 
 ToDo: Initialization Script (git pull; copy jobs to hdfs)
 
+## Submiting Job
+
+Run submit_job.sh script passing the job_name. Example
+```
+bash submit_job.sh create_table_raw_consumer
+```
+
 ## Reference
 
-Dataproc https://cloud.google.com/dataproc
+Dataproc: https://cloud.google.com/dataproc
+SubmitJob: https://cloud.google.com/dataproc/docs/guides/submit-job
