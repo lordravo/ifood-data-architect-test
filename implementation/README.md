@@ -26,7 +26,7 @@ ToDo: Initialization Script (git pull; copy jobs to hdfs)
 
 Run submit_job.sh script passing the job_name. Example
 ```
-bash submit_job.sh create_table_consumer
+bash submit_job.sh create_table_raw_consumer
 ```
 
 ## Reference
