@@ -11,6 +11,8 @@ gcloud beta dataproc clusters create pyspark-jupyter \
     --optional-components 'JUPYTER,ANACONDA' \
     --project $PROJECT_ID \
     --enable-component-gateway \
+    --metadata  SOURCE_REPO=$SOURCE_REPO \
+    --initialization-actions $INIT_ACTION \
     --properties "\
 core:fs.s3.awsAccessKeyId=$AWS_ACCESS_KEY_ID,\
 core:fs.s3.awsSecretAccessKey=$AWS_SECRET_ACCESS_KEY,\

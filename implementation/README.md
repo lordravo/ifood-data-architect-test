@@ -8,19 +8,25 @@ ToDo
 
 ## Launching Cluster
 
-* Export both GCP Project and AWS Credentials
+* Ensure the initialization script is on Cloud Storage
+Currently, dataproc supports only gs:// paths for initialization scripts.
+Upload to CloudStorage and add its path to variable INIT_ACTION
+
+ToDo: Add cloudbuild.yaml to automatically rsync the init action on cloud storage
+
+* Export both GCP Project, AWS Credentials, SOURCE_REPO AND INIT_ACTION
 ```
 export PROJECT_ID=<project_id>
 export AWS_ACCESS_KEY_ID=<key_id>
 export AWS_SECRET_ACCESS_KEY=<key_secret>
+export SOURCE_REPO=https://github.com/lordravo/ifood-data-architect-test.git
+export INIT_ACTION=<init_action_gs_path>
 ```
 
 * Execute and wait for cluster creation:
 ```
 bash launch_cluster.sh
 ```
-
-ToDo: Initialization Script (git pull; copy jobs to hdfs)
 
 ## Submiting Job
 
