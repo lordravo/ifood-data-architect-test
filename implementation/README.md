@@ -41,4 +41,9 @@ bash submit_job.sh create_table_raw_consumer
 ## Reference
 
 Dataproc: https://cloud.google.com/dataproc
-SubmitJob: https://cloud.google.com/dataproc/docs/guides/submit-job
+Dataproc SubmitJob: https://cloud.google.com/dataproc/docs/guides/submit-job
+Hadoop Python: https://thegurus.tech/posts/2019/05/hadoop-python/
+Pyspark SQL: https://s3.amazonaws.com/assets.datacamp.com/blog_assets/PySpark_SQL_Cheat_Sheet_Python.pdf
+SQL Language: https://cwiki.apache.org/confluence/display/Hive/LanguageManual+Select , 
+  https://docs.databricks.com/spark/latest/spark-sql/index.html#sql-language-manual ,
+  http://spark.apache.org/docs/2.3.0/api/sql/index.html
