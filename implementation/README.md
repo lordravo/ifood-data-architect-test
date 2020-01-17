@@ -28,6 +28,9 @@ export INIT_ACTION=<init_action_gs_path>
 bash launch_cluster.sh
 ```
 
+* Autoscaling
+Use launch_autoscale_cluster.sh instead. Be sure to export MAX_WORKERS first
+
 ## Submiting Job
 
 Run submit_job.sh script passing the job_name. Example
