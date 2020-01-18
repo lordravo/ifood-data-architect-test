@@ -38,6 +38,16 @@ Run submit_job.sh script passing the job_name. Example
 bash submit_job.sh create_table_raw_consumer
 ```
 
+## Performance
+Performance can be tracked either by the cluster monitor board (and stackdriver), or through the Hadoop and Spark respective interfaces.
+
+![Jobs](./imgs/jobs.PNG)
+
+![Monitor 1.](./imgs/monitor_1.PNG)
+
+![Monitor 2.](./imgs/monitor_2.PNG)
+
+
 ## Reference
 
 Dataproc: https://cloud.google.com/dataproc
