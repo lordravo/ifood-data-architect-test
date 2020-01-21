@@ -16,7 +16,7 @@ Upload to CloudStorage and add its path to variable INIT_ACTION
 
 Nice to have: Add cloudbuild.yaml to automatically rsync the init action on cloud storage
 
-* Export both GCP Project, AWS Credentials, SOURCE_REPO AND INIT_ACTION
+* Export GCP Project, AWS Credentials, SOURCE_REPO AND INIT_ACTION
 ```
 export PROJECT_ID=<project_id>
 export AWS_ACCESS_KEY_ID=<key_id>
@@ -58,6 +58,15 @@ Performance can be tracked either by the cluster monitor board (and stackdriver)
 ## Scalability
 Scalability can be achieved focusing on highmem workers (as seen on the autoscale script), and migrating data to a external storage, such as S3 or GCS.
 
+## Alternative Contexts and Solutions
+
+1. Complex job dependencies:
+
+Adopt a workflow framework such as Airflow for DAGs, or Jenkins for Pipelines
+
+2. Real-time streaming data:
+
+Ingestion through Apache Beam (KafkaIO/PubsubIO)
 
 ## Reference
 
